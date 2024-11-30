@@ -1,60 +1,99 @@
-# TeslaClone
+# Tesla Homepage Clone
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.2.
+This project is an educational clone of the Tesla.com homepage, built with Angular. It serves as a practical exercise in implementing modern web development practices and understanding complex UI patterns used by leading tech companies.
 
-## Development server
+## About
 
-To start a local development server, run:
+This application is a faithful recreation of Tesla's homepage, demonstrating the use of Angular's powerful features to build responsive, dynamic web interfaces. The project focuses on educational purposes and showcases frontend development best practices.
+
+## Tech Stack
+
+- **Frontend Framework:** Angular
+- **Language:** TypeScript
+- **Styling:** CSS/SCSS
+- **Build Tool:** Angular CLI
+- **Deployment:** GitHub Pages
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (LTS version recommended)
+- npm (comes with Node.js)
+- Angular CLI (`npm install -g @angular/cli`)
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone [your-repository-url]
+   ```
+
+2. Navigate to the project directory:
+   ```bash
+   cd [project-directory]
+   ```
+
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+## Available Scripts
+
+The following npm scripts are available for development, testing, and deployment:
+
+- `npm run ng` - Run Angular CLI commands
+- `npm run start:prod` - Start the development server in production mode
+- `npm run start:dev` - Start the development server in development mode
+- `npm run build:prod` - Build the application for production
+- `npm run watch` - Build and watch for changes in development mode
+- `npm run test` - Execute unit tests via Karma
+
+## Development
+
+To start developing, run:
 
 ```bash
-ng serve
+npm run start:dev
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+This will start a development server at `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Building for Production
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+To build the application for production, run:
 
 ```bash
-ng generate component component-name
+npm run build:prod
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+The build artifacts will be stored in the `dist/` directory.
 
-```bash
-ng generate --help
-```
+## Deployment
 
-## Building
+This project is automatically deployed to GitHub Pages using GitHub Actions. The deployment workflow is configured in `.github/workflows/main.yml`.
 
-To build the project run:
+Every push to the main branch triggers the deployment pipeline, which builds and deploys the application to GitHub Pages.
 
-```bash
-ng build
-```
+You can access the live version of the application at: [your-github-pages-url]
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Contributing
 
-## Running unit tests
+Although this is a personal project, contributions are welcome. If you would like to contribute, follow these steps:
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-```bash
-ng test
-```
+## License
 
-## Running end-to-end tests
+This project is for educational purposes only. All Tesla branding and assets belong to Tesla, Inc.
 
-For end-to-end (e2e) testing, run:
+## Acknowledgments
 
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
-# TeslaClone
+- Tesla, Inc. for the original design inspiration
+- Angular team for the amazing framework
+- The open-source community for various tools and libraries used in this project
