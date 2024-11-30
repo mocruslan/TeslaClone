@@ -1,0 +1,38 @@
+name: Angular Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 23.3.0
+
+      - name: Install dependencies
+        run: npm clean-install
+
+      - name: Build Angular app
+        run: npm run build:prod
+
+      - name: Deploy to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: github-option-three-app/dist/browser
+          branch: prod
+          token: ${{ secrets.GH_TOKEN }}
+
+      - name: Deploy to gh pages
+        run: |
+          npx angular-cli-ghpages --dir=dist/tesla-clone
+        env:
+          CI: true
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
